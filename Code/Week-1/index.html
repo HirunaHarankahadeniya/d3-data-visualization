@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Data Visualization Exercise 1">
-    <meta name="keywords" content="HTML CSS">
-    <meta name="author" content="Senuda">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Data Visualization Exercise 1" />
+    <meta name="keywords" content="HTML CSS" />
+    <meta name="author" content="Senuda" />
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
-    <title>Task 1.1 HTML and CSS Demo Page</title>
-</head>
-<body>
+    <title>Task 1.1.1 HTML and CSS Demo Page</title>
+  </head>
+  <body>
     <h1>Pet Ownership in Australia During the COVID Pandemic</h1>
     <h2>Author - Senuda Hansara</h2>
     <p>
-        There has been a substantial boom in pet ownership since 2019, with an estimated <b>30.4 million pets</b>
-        nationally. The proportion of pet-owning households has increased significantly from 61% to 69% in
-        <i>just over two years</i>—led by a surge in dog ownership.
-        Following table is a result of a research conducted by the shows the Animal Medicine Australia Org. about the pet ownership in Australia during the COVID pandemic. It includes different kinds of pets including,
+      There has been a substantial boom in pet ownership since 2019, with an
+      estimated <b>30.4 million pets</b>
+      nationally. The proportion of pet-owning households has increased
+      significantly from 61% to 69% in
+      <i>just over two years</i>—led by a surge in dog ownership. Following
+      table is a result of a research conducted by the shows the Animal Medicine
+      Australia Org. about the pet ownership in Australia during the COVID
+      pandemic. It includes different kinds of pets including,
     </p>
-    
+
     <ul>
-        <li>Dogs</li>
-        <li>Cats</li>
-        <li>Fish</li>
-        <li>Birds</li>
-        <li>Small Mammals</li>
-        <li>Reptiles</li>
-        <li>Other pets (horses, cows, and sheep)</li>
+      <li>Dogs</li>
+      <li>Cats</li>
+      <li>Fish</li>
+      <li>Birds</li>
+      <li>Small Mammals</li>
+      <li>Reptiles</li>
+      <li>Other pets (horses, cows, and sheep)</li>
     </ul>
 
     <button onclick="changeImage('images/pets-1.png')">Image 1</button>
@@ -35,49 +39,62 @@
     <button onclick="changeImage('images/pets-3.png')">Image 3</button>
 
     <figure>
-        <img id="chartImage" src="images/pets-1.png" alt="Chart Image 1" width="550" height="300">
-        <figcaption id="imageCaption">Fig 1. Comparison of Pet Ownership in 2019 and 2021. Data Source: 
-            <a href="https://animalmedicinesaustralia.org.au/wp-content/uploads/2021/08/AMAU005-PATP-Report21_v1.41_WEB.pdf" target="_blank">
-                Animal Medicines Australia Report
-            </a>
-        </figcaption>
+      <img
+        id="chartImage"
+        src="images/pets-1.png"
+        alt="Chart Image 1"
+        width="550"
+        height="300"
+      />
+      <figcaption id="imageCaption">
+        Fig 1. Comparison of Pet Ownership in 2019 and 2021. Data Source:
+        <a
+          href="https://animalmedicinesaustralia.org.au/wp-content/uploads/2021/08/AMAU005-PATP-Report21_v1.41_WEB.pdf"
+          target="_blank"
+        >
+          Animal Medicines Australia Report
+        </a>
+      </figcaption>
     </figure>
 
     <p>
-        This estimate of 30.4 million pets is substantially higher than the 28.5
-        million estimated two years prior in the 2019 Pets in Australia report—due
-        to an overall population growth, an increased proportion of pet-owning
-        households, slight increases in the average number of animals (especially
-        dogs and cats—the two most prominent types of companion animals in
-        Australia), and a rise in households with multiple types of pets (from 22%
-        to 27%).
+      This estimate of 30.4 million pets is substantially higher than the 28.5
+      million estimated two years prior in the 2019 Pets in Australia report—due
+      to an overall population growth, an increased proportion of pet-owning
+      households, slight increases in the average number of animals (especially
+      dogs and cats—the two most prominent types of companion animals in
+      Australia), and a rise in households with multiple types of pets (from 22%
+      to 27%).
     </p>
 
     <footer>
-        <hr>
-        <p>
-            COS30045 Data Visualization - Task 1.1 HTML and CSS Demo Page
-        </p>
+      <hr />
+      <p>COS30045 Data Visualization - Task 1.1 HTML and CSS Demo Page</p>
     </footer>
 
     <script>
-        var captions = {
-            'images/pets-1.png':'Fig 1. Comparison of Pet Ownership in 2019 and 2021.',
-            'images/pets-2.png':'Fig 2. Pet ownership in Australia, 2021 - share of all households (%).',
-            'images/pets-3.png':'Fig 3. Differences by current pet ownership status.'
-        }
+      var captions = {
+        "images/pets-1.png":
+          "Fig 1. Comparison of Pet Ownership in 2019 and 2021.",
+        "images/pets-2.png":
+          "Fig 2. Pet ownership in Australia, 2021 - share of all households (%).",
+        "images/pets-3.png":
+          "Fig 3. Differences by current pet ownership status.",
+      };
 
-        function changeImage(imageSrc) {
-            var chartImage = document.getElementById('chartImage');
-            chartImage.src = imageSrc;
+      function changeImage(imageSrc) {
+        var chartImage = document.getElementById("chartImage");
+        chartImage.src = imageSrc;
 
-            var imageCaption = document.getElementById('imageCaption');
-            imageCaption.innerHTML = captions[imageSrc] +' Data Source: ' +
-                '<a href="https://animalmedicinesaustralia.org.au/wp-content/uploads/2021/08/AMAU005-PATP-Report21_v1.41_WEB.pdf" target="_blank">' +
-                'Animal Medicines Australia Report</a>';
-            
-            chartImage.alt = 'Chart Image ' + imageSrc.charAt(imageSrc.length - 5);
-        }
+        var imageCaption = document.getElementById("imageCaption");
+        imageCaption.innerHTML =
+          captions[imageSrc] +
+          " Data Source: " +
+          '<a href="https://animalmedicinesaustralia.org.au/wp-content/uploads/2021/08/AMAU005-PATP-Report21_v1.41_WEB.pdf" target="_blank">' +
+          "Animal Medicines Australia Report</a>";
+
+        chartImage.alt = "Chart Image " + imageSrc.charAt(imageSrc.length - 5);
+      }
     </script>
-</body>
+  </body>
 </html>
