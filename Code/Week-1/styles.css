@@ -1,0 +1,100 @@
+/* Resetting default margins and paddings */
+body{
+    margin: 10;
+    padding: 10;
+}
+
+/* Setting a pleasant font family and color */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f1e4e4;
+}
+
+/* Styling the headings */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #3b2d2d;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #5f5757;
+}
+
+/* Styling paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Styling unordered lists */
+ul {
+    margin-bottom: 20px;
+}
+
+/* Styling list items */
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Styling the figure */
+figure {
+    margin: 20px 0;
+}
+
+/* Styling the image */
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styling the figure caption */
+figcaption {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Styling the footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #777;
+}
+
+footer hr {
+    margin-bottom: 20px;
+    border-color: #ddd;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* Button styling */
+button {
+    background-color: #674bae;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #7070c9;
+}
